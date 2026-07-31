@@ -53,6 +53,7 @@ export default function Renovation() {
             src={IMAGES.bathroomRenovation}
             alt="Saneerattu moderni kylpyhuone"
             fill
+            quality={70}
             sizes="(max-width: 768px) 100vw, 1200px"
             className="object-cover object-[70%_center]"
           />

@@ -48,7 +48,10 @@ export default function Hero() {
             alt="LVI-asentaja asentamassa vesikalustetta modernissa kylpyhuoneessa"
             fill
             priority
-            sizes="(max-width: 768px) 100vw, 1920px"
+            fetchPriority="high"
+            decoding="sync"
+            quality={72}
+            sizes="(max-width: 768px) 100vw, (max-width: 1280px) 80vw, 1100px"
             className="object-cover object-[center_18%]"
           />
 

@@ -1,7 +1,6 @@
 @import "tailwindcss";
-@import "@morfoos/morfoos-os/styles/admin.css";
 
-/* Scan Morfoos packages so admin/core utility classes are generated */
+/* Scan Morfoos packages so admin/core utility classes are generated when needed */
 @source "../node_modules/@morfoos/morfoos-os/dist/**/*.{js,cjs}";
 @source "../node_modules/@morfoos/core/dist/**/*.{js,cjs}";
 

@@ -22,14 +22,14 @@ export default function Footer() {
               height={140}
               className="h-9 w-auto"
             />
-            <p className="mt-4 max-w-[32ch] text-[14px] leading-relaxed text-white/60">
+            <p className="mt-4 max-w-[32ch] text-[14px] leading-relaxed text-white/75">
               Vuosien kokemuksella LVI-työt, korjaukset ja saneeraukset kotitalouksille,
               taloyhtiöille ja yrityksille pääkaupunkiseudulla.
             </p>
           </div>
 
           <div>
-            <h3 className="text-[13px] font-semibold uppercase tracking-[0.04em] text-white/50">
+            <h3 className="text-[13px] font-semibold uppercase tracking-[0.04em] text-white/70">
               Valikko
             </h3>
             <ul className="mt-4 flex flex-col gap-2.5">
@@ -44,7 +44,7 @@ export default function Footer() {
           </div>
 
           <div>
-            <h3 className="text-[13px] font-semibold uppercase tracking-[0.04em] text-white/50">
+            <h3 className="text-[13px] font-semibold uppercase tracking-[0.04em] text-white/70">
               Yhteystiedot
             </h3>
             <ul className="mt-4 flex flex-col gap-2.5 text-[15px] text-white/75">
@@ -62,7 +62,7 @@ export default function Footer() {
           </div>
 
           <div>
-            <h3 className="text-[13px] font-semibold uppercase tracking-[0.04em] text-white/50">
+            <h3 className="text-[13px] font-semibold uppercase tracking-[0.04em] text-white/70">
               Toiminta-alue
             </h3>
             <ul className="mt-4 flex flex-col gap-2.5 text-[15px] text-white/75">
@@ -77,7 +77,7 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="pt-8 text-[13px] text-white/45">
+        <div className="pt-8 text-[13px] text-white/70">
           <p>© {new Date().getFullYear()} Pääkaupungin Putkihuolto. Kaikki oikeudet pidätetään.</p>
         </div>
       </div>

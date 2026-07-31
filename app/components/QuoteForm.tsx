@@ -178,7 +178,7 @@ function StepIndicator({ step }: { step: number }) {
             </span>
             <span
               className={`text-[10px] font-semibold uppercase tracking-[0.08em] ${
-                active ? "text-white" : "text-white/55"
+                active ? "text-white" : "text-white/75"
               }`}
             >
               {label}

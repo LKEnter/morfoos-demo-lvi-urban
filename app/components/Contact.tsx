@@ -3,8 +3,11 @@ import QuoteForm from "./QuoteForm";
 
 function ContactIcon({ children }: { children: React.ReactNode }) {
   return (
-    <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-[var(--color-accent-tint)] text-[var(--color-accent)]">
-      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+    <span
+      className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-[var(--color-accent-tint)] text-[var(--color-accent)]"
+      aria-hidden="true"
+    >
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
         {children}
       </svg>
     </span>
@@ -27,84 +30,78 @@ export default function Contact() {
 
             <dl className="mt-9 flex flex-col gap-5">
               <div className="flex items-center gap-3">
-                <ContactIcon>
-                  <path
-                    d="M4.5 4h3.2l1.3 4-1.9 1.4a11 11 0 005.5 5.5l1.4-1.9 4 1.3v3.2a1.5 1.5 0 01-1.6 1.5A15.5 15.5 0 013 5.6 1.5 1.5 0 014.5 4z"
-                    stroke="currentColor"
-                    strokeWidth="1.6"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                  />
-                </ContactIcon>
-                <div>
-                  <dt className="sr-only">Puhelin</dt>
-                  <dd>
-                    <a
-                      href={CONTACT.phoneHref}
-                      className="text-lg font-semibold text-[var(--color-ink)] hover:text-[var(--color-accent)]"
-                    >
-                      {CONTACT.phoneLabel}
-                    </a>
-                  </dd>
-                </div>
+                <dt className="sr-only">Puhelin</dt>
+                <dd className="m-0 flex items-center gap-3">
+                  <ContactIcon>
+                    <path
+                      d="M4.5 4h3.2l1.3 4-1.9 1.4a11 11 0 005.5 5.5l1.4-1.9 4 1.3v3.2a1.5 1.5 0 01-1.6 1.5A15.5 15.5 0 013 5.6 1.5 1.5 0 014.5 4z"
+                      stroke="currentColor"
+                      strokeWidth="1.6"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    />
+                  </ContactIcon>
+                  <a
+                    href={CONTACT.phoneHref}
+                    className="text-lg font-semibold text-[var(--color-ink)] hover:text-[var(--color-accent)]"
+                  >
+                    {CONTACT.phoneLabel}
+                  </a>
+                </dd>
               </div>
 
               <div className="flex items-center gap-3">
-                <ContactIcon>
-                  <path
-                    d="M4 6.5h16a1 1 0 011 1v9a1 1 0 01-1 1H4a1 1 0 01-1-1v-9a1 1 0 011-1zM3.5 7l8.5 6 8.5-6"
-                    stroke="currentColor"
-                    strokeWidth="1.6"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                  />
-                </ContactIcon>
-                <div>
-                  <dt className="sr-only">Sähköposti</dt>
-                  <dd>
-                    <a
-                      href={CONTACT.emailHref}
-                      className="text-lg font-semibold text-[var(--color-ink)] hover:text-[var(--color-accent)]"
-                    >
-                      {CONTACT.emailLabel}
-                    </a>
-                  </dd>
-                </div>
+                <dt className="sr-only">Sähköposti</dt>
+                <dd className="m-0 flex items-center gap-3">
+                  <ContactIcon>
+                    <path
+                      d="M4 6.5h16a1 1 0 011 1v9a1 1 0 01-1 1H4a1 1 0 01-1-1v-9a1 1 0 011-1zM3.5 7l8.5 6 8.5-6"
+                      stroke="currentColor"
+                      strokeWidth="1.6"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    />
+                  </ContactIcon>
+                  <a
+                    href={CONTACT.emailHref}
+                    className="text-lg font-semibold text-[var(--color-ink)] hover:text-[var(--color-accent)]"
+                  >
+                    {CONTACT.emailLabel}
+                  </a>
+                </dd>
               </div>
 
               <div className="flex items-center gap-3">
-                <ContactIcon>
-                  <circle cx="12" cy="12" r="3.2" fill="currentColor" />
-                </ContactIcon>
-                <div>
-                  <dt className="sr-only">Päivystys</dt>
-                  <dd className="text-lg font-semibold text-[var(--color-ink)]">24/7 päivystys</dd>
-                </div>
+                <dt className="sr-only">Päivystys</dt>
+                <dd className="m-0 flex items-center gap-3 text-lg font-semibold text-[var(--color-ink)]">
+                  <ContactIcon>
+                    <circle cx="12" cy="12" r="3.2" fill="currentColor" />
+                  </ContactIcon>
+                  24/7 päivystys
+                </dd>
               </div>
 
               <div className="flex items-center gap-3">
-                <ContactIcon>
-                  <path
-                    d="M12 21s7-6.1 7-11.5A7 7 0 005 9.5C5 14.9 12 21 12 21z"
-                    stroke="currentColor"
-                    strokeWidth="1.6"
-                    strokeLinejoin="round"
-                  />
-                  <circle cx="12" cy="9.5" r="2.4" stroke="currentColor" strokeWidth="1.6" />
-                </ContactIcon>
-                <div>
-                  <dt className="sr-only">Osoite</dt>
-                  <dd>
-                    <a
-                      href={CONTACT.mapHref}
-                      target="_blank"
-                      rel="noreferrer"
-                      className="text-lg font-semibold text-[var(--color-ink)] hover:text-[var(--color-accent)]"
-                    >
-                      {CONTACT.addressLabel}
-                    </a>
-                  </dd>
-                </div>
+                <dt className="sr-only">Osoite</dt>
+                <dd className="m-0 flex items-center gap-3">
+                  <ContactIcon>
+                    <path
+                      d="M12 21s7-6.1 7-11.5A7 7 0 005 9.5C5 14.9 12 21 12 21z"
+                      stroke="currentColor"
+                      strokeWidth="1.6"
+                      strokeLinejoin="round"
+                    />
+                    <circle cx="12" cy="9.5" r="2.4" stroke="currentColor" strokeWidth="1.6" />
+                  </ContactIcon>
+                  <a
+                    href={CONTACT.mapHref}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="text-lg font-semibold text-[var(--color-ink)] hover:text-[var(--color-accent)]"
+                  >
+                    {CONTACT.addressLabel}
+                  </a>
+                </dd>
               </div>
 
               <div className="my-8">

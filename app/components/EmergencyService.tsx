@@ -29,6 +29,7 @@ export default function EmergencyService() {
             src={IMAGES.heatingSystem}
             alt="LVI-asentaja korjaamassa lämmitysjärjestelmää"
             fill
+            quality={70}
             sizes="(max-width: 768px) 100vw, 1200px"
             className="object-cover"
           />

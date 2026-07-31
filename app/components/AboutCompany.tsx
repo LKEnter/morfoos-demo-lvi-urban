@@ -46,6 +46,8 @@ export default function AboutCompany() {
               alt="Pääkaupungin Putkihuolto -asentajat työn ääressä"
               width={640}
               height={480}
+              quality={70}
+              sizes="(max-width: 1024px) 100vw, 560px"
               className="h-full w-full object-cover"
             />
           </div>

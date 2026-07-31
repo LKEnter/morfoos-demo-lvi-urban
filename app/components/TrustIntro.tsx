@@ -69,7 +69,8 @@ export default function TrustIntro() {
                   src={cell.src}
                   alt=""
                   fill
-                  sizes="(max-width: 640px) 100vw, 33vw"
+                  quality={70}
+                  sizes="(max-width: 640px) 100vw, (max-width: 1024px) 33vw, 400px"
                   className="object-cover transition-transform duration-300 ease-out group-hover:scale-105"
                 />
               </div>

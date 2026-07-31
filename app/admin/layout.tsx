@@ -1,4 +1,5 @@
 import "@/lib/morfoos";
+import "@morfoos/morfoos-os/styles/admin.css";
 import React from "react";
 
 export const metadata = {
