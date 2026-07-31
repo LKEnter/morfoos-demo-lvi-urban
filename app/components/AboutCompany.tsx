@@ -27,7 +27,7 @@ const CHECKS = [
 ];
 
 const STATS = [
-  { value: "Kok.", label: "vuosien kokemus" },
+  { value: "+15", label: "vuotta kokemusta" },
   { value: "98%", label: "asiakastyytyväisyys" },
   { value: "1 tunnin", label: "vasteaika" },
   { value: "24/7", label: "päivystys" },

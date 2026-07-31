@@ -4,7 +4,7 @@ import { IMAGES } from "../lib/images";
 import PrimaryButton from "./PrimaryButton";
 
 const STATS = [
-  { value: "Kok.", label: "Vuosien kokemus" },
+  { value: "+15", label: "Vuotta kokemusta" },
   { value: "24/7", label: "Päivystys" },
   { value: "+400", label: "LVI-toteutusta" },
 ];
