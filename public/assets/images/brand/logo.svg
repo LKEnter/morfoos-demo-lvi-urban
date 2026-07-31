@@ -1,0 +1,9 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 140" role="img" aria-label="Paakaupungin Putkihuolto">
+  <g fill="none" stroke="#FFFFFF" stroke-width="5" stroke-linejoin="round" stroke-linecap="round">
+    <path d="M28 78 V52 L58 28 L88 52 V78 Z"/>
+    <path d="M40 42 L40 30 L50 30 L50 34"/>
+  </g>
+  <path d="M58 48 C58 48 42 68 42 78 C42 88 49 94 58 94 C67 94 74 88 74 78 C74 68 58 48 58 48 Z" fill="#FFFFFF"/>
+  <text x="110" y="62" fill="#FFFFFF" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="700" letter-spacing="1.5">PÄÄKAUPUNGIN</text>
+  <text x="110" y="100" fill="#FFFFFF" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="700" letter-spacing="1.5">PUTKIHUOLTO</text>
+</svg>
