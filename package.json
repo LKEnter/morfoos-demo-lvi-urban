@@ -27,6 +27,7 @@
         "@morfoos/core": "^1.0.0",
         "@morfoos/morfoos-os": "*",
         "@prisma/client": "^6.19.0",
+        "critters": "^0.0.23",
         "lucide-react": "^1.16.0",
         "next": "16.2.6",
         "react": "^19.0.0",

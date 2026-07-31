@@ -38,14 +38,14 @@ const CARDS = [
   },
 ];
 
-const IMAGE_CELLS = [IMAGES.heroTechnician, IMAGES.bathroomRenovation];
+const IMAGE_CELLS = [IMAGES.trustGrid[0], IMAGES.trustGrid[1]];
 
 const CELLS = [
   { type: "image" as const, src: IMAGE_CELLS[0] },
   { type: "text" as const, card: CARDS[0] },
   { type: "image" as const, src: IMAGE_CELLS[1] },
   { type: "text" as const, card: CARDS[1] },
-  { type: "image" as const, src: IMAGES.heatingSystem },
+  { type: "image" as const, src: IMAGES.trustGrid[2] },
   { type: "text" as const, card: CARDS[2] },
 ];
 
@@ -69,8 +69,8 @@ export default function TrustIntro() {
                   src={cell.src}
                   alt=""
                   fill
-                  quality={70}
-                  sizes="(max-width: 640px) 100vw, (max-width: 1024px) 33vw, 400px"
+                  quality={60}
+                  sizes="(max-width: 639px) calc(100vw - 40px), 380px"
                   className="object-cover transition-transform duration-300 ease-out group-hover:scale-105"
                 />
               </div>

@@ -144,7 +144,7 @@ const CONTACT_TIMES = ["Arkisin klo 8–16", "Arkisin klo 16–20", "Viikonloppu
 const STEPS = ["Palvelu", "Kohde", "Yhteystiedot"];
 
 const inputClass =
-  "w-full rounded-xl border border-white/25 bg-white/10 px-4 py-3 text-[15px] text-white placeholder:text-white/50 transition-colors duration-150 focus-visible:border-white focus-visible:bg-white/15 focus-visible:outline-white focus-visible:outline-offset-2";
+  "w-full rounded-xl border border-white/25 bg-white/10 px-4 py-3 text-[15px] text-white placeholder:text-[var(--color-accent-tint)] transition-colors duration-150 focus-visible:border-white focus-visible:bg-white/15 focus-visible:outline-white focus-visible:outline-offset-2";
 
 const selectClass = `${inputClass} appearance-none`;
 
@@ -159,7 +159,7 @@ function StepIndicator({ step }: { step: number }) {
           <div key={label} className="flex flex-col items-center gap-1.5 max-w-[4rem] w-full">
             <span
               className={`flex h-7 w-7 items-center justify-center rounded-full text-[13px] font-semibold transition-colors duration-150 ${
-                active || done ? "bg-white text-[var(--color-accent)]" : "bg-white/15 text-white/70"
+                active || done ? "bg-white text-[var(--color-accent)]" : "bg-white/20 text-white"
               }`}
             >
               {done ? (
@@ -176,11 +176,7 @@ function StepIndicator({ step }: { step: number }) {
                 idx
               )}
             </span>
-            <span
-              className={`text-[10px] font-semibold uppercase tracking-[0.08em] ${
-                active ? "text-white" : "text-white/75"
-              }`}
-            >
+            <span className="text-[10px] font-semibold uppercase tracking-[0.08em] text-white">
               {label}
             </span>
           </div>
