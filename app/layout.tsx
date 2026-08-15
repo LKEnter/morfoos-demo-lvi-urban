@@ -6,6 +6,7 @@ import Footer from "./components/Footer";
 import MobileStickyCta from "./components/MobileStickyCta";
 import "./globals.css";
 
+import DemoAnalytics from "./components/DemoAnalytics";
 const manrope = Manrope({
   subsets: ["latin", "latin-ext"],
   weight: ["600", "700", "800"],
@@ -29,6 +30,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="fi" className={`${manrope.variable} ${sourceSans.variable}`}>
       <body>
+        <DemoAnalytics />
         {/* Automatically activates case-insensitive link delegation and form monitoring */}
         <MorfoosGlobalProvider
           siteId={process.env.NEXT_PUBLIC_SITE_ID || "development_fallback"}
